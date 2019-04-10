@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+#Header always set Cache-Control "max-age=2628000, public"
+#Header always set Expires "access plus 30 days"
+FileETag  MTime Size
+ExpiresActive on
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/gif "access plus 30 days"
