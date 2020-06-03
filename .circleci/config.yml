@@ -2,7 +2,7 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME_DH: islamicnetwork/cdn.aladhan.com
+      IMAGE_NAME: islamicnetwork/cdn.aladhan.com
     docker:
       - image: circleci/buildpack-deps:stretch
   apache2:
