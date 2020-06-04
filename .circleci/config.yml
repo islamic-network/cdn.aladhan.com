@@ -63,7 +63,7 @@ jobs:
           command: |
             echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
             IMAGE_TAG="${CIRCLE_BUILD_NUM}"
-            docker push $IMAGE_NAME_DH:latest
+            docker push $IMAGE_NAME:latest
   publish-docker-tag:
     executor: docker-publisher
     steps:
